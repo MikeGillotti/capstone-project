@@ -39,8 +39,7 @@ Intuitively, kanji count had a positive correlation with component count and str
 Then I used a Scikit-learn’s decision tree model to better identify which features work best. It showed me that kanji count was dominating every other featuring.
 
 ![screenshot](/capstone%20screenshot%202.JPG)
-This was a problem because this variable was overshadowing every other one. I made the decision to exclude the kanji count, and got a
-10 slightly lower accuracy score of 78%. I was satisfied with the score, because I want to find patterns using a more balanced approach between the features, not just a single feature dominating the rest.
+This was a problem because this variable was overshadowing every other one. I made the decision to exclude the kanji count, and got a slightly lower accuracy score of 78%. I was satisfied with the score, because I want to find patterns using a more balanced approach between the features, not just a single feature dominating the rest.
 
 Speaking of balanced approaches, after selecting the features I wanted to use, I used Scikit-learn’s voting classifier, which weighs 3 training models at once, decision tree, k-neighbors, and SVC. Using this model I achieved a slightly higher accuracy level.
 
