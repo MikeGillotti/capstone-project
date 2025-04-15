@@ -2,6 +2,11 @@
 
 A machine learning model that identifies patterns between Japanese words and the kanji features that compose the words.
 ---
+- [Data Summary](#data-summary)
+- [Variables](#variables)
+- [Machine Learning Model](#machine-learning-model)
+- [Validation](#validation)
+- [User Guide](#user-guide)
 
 ## Data Summary
 
@@ -12,7 +17,7 @@ A machine learning model that identifies patterns between Japanese words and the
 
 ---
 
-## Data Fields
+## Variables
 ### Kanji Count
 Using the kanji from the Jōyō Kanji list, I identified each individual kanji for every word in the JLPT vocabulary list, and counted each occurrence.
 ### Component Count
@@ -28,7 +33,7 @@ I used the Kradfile to join an array of every reading for each Kanji used in the
 
 ---
 
-## Machine Learning
+## Machine Learning Model
 Using the Pandas Python library, my initial step was to create a scatter plot matrix for each independent variable while using the readings as a category to identify any potential clusterings.
 
 ![screenshot](/capstone%20screenshot%201.JPG)
@@ -53,7 +58,7 @@ User Guide
 
 ## User Guide
 The app is an analysis tool that breaks down the true and false predictions by JLTP Rank.
-## Enivornmental Setup
+### Enivornmental Setup
 - Download Anaconda Navigator https://www.anaconda.com/products/navigator
 - After installing and launching the app, navigate to Jupyter Notebooks
 - Create a new note book and install the following libraries
@@ -63,7 +68,7 @@ The app is an analysis tool that breaks down the true and false predictions by J
 
 ![screenshot](/capstone%20screenshot%204.JPG)
 
-## Application User Guide
+### Application User Guide
 - Download the Jupyter Notebook source file here https://github.com/MikeGillotti/capstone-project/blob/main/capstone%20project.ipynb
 - Within Jupyter Notebook, navigate to the project file and open it.
 - First, we’ll need to rerun it: Kernel -> Restart & Run All
